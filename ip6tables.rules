@@ -37,7 +37,6 @@
 -A OUTPUT -p tcp --sport 0:1023 -j DROP
 
 # UDP egress
--A OUTPUT -p udp --sport 53 -j ACCEPT
 -A OUTPUT -p udp --sport 123 -j ACCEPT
 -A OUTPUT -p udp --dport 123 -m state --state NEW,ESTABLISHED -j ACCEPT
 -A OUTPUT -p udp --sport 0:1023 -j DROP
